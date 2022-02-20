@@ -1,0 +1,6 @@
+const series=async function(){
+
+
+
+    
+}
