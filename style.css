@@ -1,23 +1,55 @@
 @font-face {
-    font-family: 'Once Upon a Time-Inverse';
+    font-family: "Once Upon a Time-Inverse";
     font-style: normal;
     font-weight: normal;
-    src: local('Once Upon a Time-Inverse'), url('Once Upon a Time-Inverse.woff') format('woff');
+    src: local("Once Upon a Time-Inverse"), url("Once Upon a Time-Inverse.woff") format("woff");
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(images/44444444444444444444.jpg);
+    background-position: center;
+    background-size:inherit;
+    background-repeat:no-repeat ;
 }
 
-.container{
+.header-img{
+    width: 100%;
+    /* height: ; */
+}
+
+
+
+
+
+.container {
+    margin-top: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 5rem;
+    /* padding: 5rem; */
 }
-.url{
+.url {
     display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 94, 0);
 }
 
-.card{
-width: 200px;;
-margin: 2em;
-
+.card {
+    margin: 2em;
+    background-color: rgb(229, 202, 255);
+    padding: 10px;
+    border-radius: 15px;
+}
+.image {
+    padding: 5px;
+    border-radius: 10px;
+}
+#searchForm{
+    float: right;
 }

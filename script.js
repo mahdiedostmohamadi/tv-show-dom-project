@@ -17,12 +17,14 @@ const series = (movies) => {
     const header = document.querySelector("header");
     const search = document.querySelector(".search");
     const searchForm = document.querySelector("#searchForm");
+    
 
     for (let movie of movies) {
         let card = document.createElement("div");
         card.classList.add("card");
         container.appendChild(card);
         const img = document.createElement("img");
+        img.classList.add('image')
         // card.append(img)
         img.src = movie.image.medium;
         const link=document.createElement('a')
@@ -31,6 +33,7 @@ const series = (movies) => {
         // p.classList.add('name')
         link.classList.add('url')
         link.innerText=movie.name
+        link.target=('_blank')
         // link.innerText=p
     
         card.append(link,img)
