@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Once Upon a Time-Inverse';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Once Upon a Time-Inverse'), url('Once Upon a Time-Inverse.woff') format('woff');
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+.url{
+    display: block;
+}
+
+.card{
+width: 200px;;
+margin: 2em;
+
+}
