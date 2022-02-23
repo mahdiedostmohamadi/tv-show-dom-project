@@ -24,28 +24,18 @@ const series = (movies) => {
         card.classList.add("card");
         container.appendChild(card);
         const img = document.createElement("img");
-        img.classList.add('image')
-        // card.append(img)
+        img.classList.add("image");
+
         img.src = movie.image.medium;
-        const link=document.createElement('a')
-        link.href=movie.url
-        // const p=document.createElement('p')
-        // p.classList.add('name')
-        link.classList.add('url')
-        link.innerText=movie.name
-        link.target=('_blank')
-        // link.innerText=p
-    
-        card.append(link,img)
-        
-         
+        const link = document.createElement("a");
+        link.href = movie.url;
+        link.classList.add("url");
+        link.innerText = movie.name;
+        link.target = "_blank";
+      
+
+        card.append(link, img);
 
         // console.log(movie)
-      
-      
-
-        
-
-        
     }
 };

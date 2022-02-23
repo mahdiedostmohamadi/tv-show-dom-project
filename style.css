@@ -15,9 +15,11 @@ body{
 
 }
 
-.header{
-    background-image: url(images/11111.jpg);
+
+.header-img{
+    width: 100%;
 }
+
 
 
 
@@ -48,6 +50,26 @@ body{
     padding: 5px;
     border-radius: 10px;
 }
+
+input{
+    width:500px;
+    height: 40px;
+    background-color: #7f70ff;
+    border-radius: 15px;
+    margin: 7px;
+}
+#btnsubmit{
+    width: 100px;
+    height: 40px;
+    background-color: #7f70ff;
+    border-radius: 15px;
+    padding: 7px;
+
+}
 #searchForm{
-    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    
 }
