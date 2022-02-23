@@ -17,7 +17,8 @@ const series = (movies) => {
     const header = document.querySelector("header");
     const search = document.querySelector(".search");
     const searchForm = document.querySelector("#searchForm");
-    
+    const input = document.querySelector("input");
+    const select = document.querySelector("#selects");
 
     for (let movie of movies) {
         let card = document.createElement("div");
@@ -32,9 +33,20 @@ const series = (movies) => {
         link.classList.add("url");
         link.innerText = movie.name;
         link.target = "_blank";
-      
-
         card.append(link, img);
+        const option = document.createElement("option");
+        select.append(option);
+        let movieNumber = movie.number;
+
+        
+        movieNumber < 10 && (movieNumber = "0" + movieNumber);
+        option.innerHTML = `  s0${movie.season}+e${movieNumber}`;
+        select.appendChild(option);
+        addEventListener("change", () => {
+
+
+            
+        });
 
         // console.log(movie)
     }

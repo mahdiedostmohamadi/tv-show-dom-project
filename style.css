@@ -1,13 +1,10 @@
-@font-face {
-    font-family: "Once Upon a Time-Inverse";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Once Upon a Time-Inverse"), url("Once Upon a Time-Inverse.woff") format("woff");
-}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:sans-serif
 }
 body{
     background-image: url(images/44444444444444444444.jpg);
@@ -37,39 +34,59 @@ body{
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: rgb(255, 94, 0);
+    color: rgb(255, 251, 0);
+    font-size:large;
+    
 }
 
 .card {
     margin: 2em;
-    background-color: rgb(229, 202, 255);
+    background-color: rgba(30, 61, 133, 0.787);
     padding: 10px;
     border-radius: 15px;
 }
 .image {
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 input{
-    width:500px;
+    width:300px;
     height: 40px;
-    background-color: #7f70ff;
+    background-color:rgba(30, 61, 133, 0.787);
     border-radius: 15px;
     margin: 7px;
+    display:inline;
+    color:rgb(255, 251, 0);
+    font-size: large;
 }
 #btnsubmit{
     width: 100px;
     height: 40px;
-    background-color: #7f70ff;
+    background-color: rgba(30, 61, 133, 0.787);
     border-radius: 15px;
     padding: 7px;
+    display:inline;
+    font-size:large;
+    color:rgb(255, 251, 0);
+
+    
 
 }
-#searchForm{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5%;
+
+
+select{ 
     
+    display:inline;
+    width:200px;
+    height: 40px;
+    background-color: rgba(30, 61, 133, 0.787);
+    border-radius: 15px;
+    margin: 7px;
+    font-size: large;
+    display:inline;
+    color:rgb(255, 251, 0);
+    /* border: 5px solid rgba(255, 217, 0, 0.986); */
+
+
 }
