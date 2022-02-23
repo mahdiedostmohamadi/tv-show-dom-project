@@ -18,7 +18,8 @@ const series = (movies) => {
     const search = document.querySelector(".search");
     const searchForm = document.querySelector("#searchForm");
     const input = document.querySelector("input");
-    const select = document.querySelector("#selects");
+    const select = document.createElement('select')
+    search.appendChild(select)
 
     for (let movie of movies) {
         let card = document.createElement("div");
