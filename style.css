@@ -12,13 +12,11 @@
 body{
     background-image: url(images/44444444444444444444.jpg);
     background-position: center;
-    background-size:inherit;
-    background-repeat:no-repeat ;
+
 }
 
-.header-img{
-    width: 100%;
-    /* height: ; */
+.header{
+    background-image: url(images/11111.jpg);
 }
 
 
