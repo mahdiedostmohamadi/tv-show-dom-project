@@ -77,5 +77,6 @@ select {
 }
 
 .summary{
-    display:flex ;
+    color: rgb(255, 251, 0);
+
 }
