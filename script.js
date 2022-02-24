@@ -18,8 +18,8 @@ const series = (movies) => {
     const search = document.querySelector(".search");
     const searchForm = document.querySelector("#searchForm");
     const input = document.querySelector("input");
-    const select = document.createElement('select')
-    search.appendChild(select)
+    const select = document.createElement("select");
+    search.appendChild(select);
 
     for (let movie of movies) {
         let card = document.createElement("div");
@@ -34,20 +34,21 @@ const series = (movies) => {
         link.classList.add("url");
         link.innerText = movie.name;
         link.target = "_blank";
-        card.append(link, img);
         const option = document.createElement("option");
-        select.append(option);
-        let movieNumber = movie.number;
 
-        
+        let movieNumber = movie.number;
         movieNumber < 10 && (movieNumber = "0" + movieNumber);
         option.innerHTML = `  s0${movie.season}+e${movieNumber}`;
         select.appendChild(option);
-        addEventListener("change", () => {
 
+        const summary = document.createElement("p");
+        summary.classList.add("summary");
+        // summary.toggle("summary");
+        summary.innerHTML=movie.summary
 
-            
-        });
+        card.append(link, img, summary);
+
+        addEventListener("change", () => {});
 
         // console.log(movie)
     }

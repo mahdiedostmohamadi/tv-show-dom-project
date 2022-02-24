@@ -1,26 +1,17 @@
-
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:sans-serif
+    font-family: sans-serif;
 }
-body{
+body {
     background-image: url(images/44444444444444444444.jpg);
     background-position: center;
-
 }
 
-
-.header-img{
+.header-img {
     width: 100%;
 }
-
-
-
-
-
 
 .container {
     margin-top: 0;
@@ -28,15 +19,13 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* padding: 5rem; */
 }
 .url {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: rgb(255, 251, 0);
-    font-size:large;
-    
+    font-size: large;
 }
 
 .card {
@@ -50,43 +39,43 @@ body{
     border-radius: 15px;
 }
 
-input{
-    width:300px;
+input {
+    width: 300px;
     height: 40px;
-    background-color:rgba(30, 61, 133, 0.787);
+    background-color: rgba(30, 61, 133, 0.787);
     border-radius: 15px;
     margin: 7px;
-    display:inline;
-    color:rgb(255, 251, 0);
+    display: inline;
+    color: rgb(255, 251, 0);
     font-size: large;
 }
-#btnsubmit{
+::placeholder {
+    color: rgb(255, 251, 0);
+}
+#btnsubmit {
     width: 100px;
     height: 40px;
     background-color: rgba(30, 61, 133, 0.787);
     border-radius: 15px;
     padding: 7px;
-    display:inline;
-    font-size:large;
-    color:rgb(255, 251, 0);
-
-    
-
+    display: inline;
+    font-size: large;
+    color: rgb(255, 251, 0);
 }
 
-
-select{ 
-    
-    display:inline;
-    width:200px;
+select {
+    display: inline;
+    width: 200px;
     height: 40px;
     background-color: rgba(30, 61, 133, 0.787);
     border-radius: 15px;
     margin: 7px;
     font-size: large;
-    display:inline;
-    color:rgb(255, 251, 0);
+    display: inline;
+    color: rgb(255, 251, 0);
     /* border: 5px solid rgba(255, 217, 0, 0.986); */
+}
 
-
+.summary{
+    display:flex ;
 }
