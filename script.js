@@ -27,6 +27,7 @@ const series = (movies) => {
         container.appendChild(card);
         const img = document.createElement("img");
         img.classList.add("image");
+        img.classList.add("hover");
 
         img.src = movie.image.medium;
         const link = document.createElement("a");
@@ -44,11 +45,14 @@ const series = (movies) => {
         const summary = document.createElement("p");
         summary.classList.add("summary");
         // summary.toggle("summary");
-        summary.innerHTML=movie.summary
 
         card.append(link, img, summary);
-
-        addEventListener("change", () => {});
+        img.addEventListener("mouseover", () => {
+            summary.innerHTML = movie.summary;
+        });
+        card.addEventListener("mouseleave", () => {
+            summary.innerHTML = "";
+        });
 
         // console.log(movie)
     }

@@ -33,6 +33,7 @@ body {
     background-color: rgba(30, 61, 133, 0.787);
     padding: 10px;
     border-radius: 15px;
+    width: 300px;
 }
 .image {
     padding: 5px;
@@ -78,5 +79,5 @@ select {
 
 .summary{
     color: rgb(255, 251, 0);
-
+    /* visibility: hidden; */
 }
