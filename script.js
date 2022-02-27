@@ -27,7 +27,7 @@ const series = (movies) => {
         let card = document.createElement("div");
         card.classList.add("card");
         container.appendChild(card);
-        card.classList.add('rmv')
+        card.classList.add("rmv");
         const img = document.createElement("img");
         img.classList.add("image");
         img.classList.add("hover");
@@ -64,9 +64,9 @@ const series = (movies) => {
                 movie.summary.toLowerCase().includes(searchInput.toLowerCase())
             ) {
                 card.classList.remove("rmv");
-              } else {
+            } else {
                 card.classList.add("rmv");
-              }
+            }
         });
     }
 };
