@@ -30,21 +30,57 @@ const series = (movies) => {
 
         rate.textContent = `rate:${movie.rating.average}`;
         airtime.textContent = `airtime:${movie.airtime}`;
-        const summary=document.createElement('p')
-        summary.innerHTML=movie.summary
-        summary.style.display="none"
+        const summary = document.createElement("p");
+        summary.innerHTML = movie.summary;
+        summary.style.display = "none";
 
         card.addEventListener("mouseleave", () => {
-            summary.style.display="none"
-
+            summary.style.display = "none";
         });
-        
+
         card.addEventListener("mouseover", () => {
-            summary.style.display=""
-
+            summary.style.display = "";
         });
-        
+        const select = document.querySelector("select");
+        option = document.createElement("option");
 
-        card.append(a, img,airtime,rate,summary);
+        let episodeNumber = movie.number;
+        let seasonNumber = movie.season;
+        episodeNumber < 10 && (episodeNumber = "0" + episodeNumber);
+        seasonNumber < 10 && (seasonNumber = "0" + seasonNumber);
+
+        option.textContent = `S${movie.season}E${movie.number}${movie.name}`;
+
+        select.append(option);
+        select.addEventListener("change", () => {
+            if (!select.value.includes(option.textContent)) {
+                card.style.display = "none";
+            } else {
+                card.style.display = "";
+            }
+            if (select.value === "all") {
+                card.style.display = "";
+            }
+        });
+
+        input.addEventListener("keyup", (e) => {
+            const cards = document.querySelectorAll(".card");
+
+            console.log(e.target.value);
+
+            console.log(cards);
+
+            let searchInput = e.target.value.toLowerCase();
+
+            cards.forEach((card) => {
+                if (!card.textContent.toLowerCase().includes(searchInput)) {
+                    card.style.display = "none";
+                } else {
+                    card.style.display = "block";
+                }
+            });
+        });
+
+        card.append(a, img, airtime, rate, summary);
     }
 };

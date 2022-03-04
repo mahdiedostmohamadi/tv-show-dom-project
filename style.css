@@ -32,7 +32,7 @@ button {
 }
 select {
     display: block;
-    width: 200px;
+    width: 350px;
     height: 40px;
     background-color: rgba(30, 61, 133, 0.787);
     border-radius: 15px;
@@ -86,4 +86,11 @@ main {
     padding: 10px;
     margin: 10px;
     display: inline-block;
+}
+
+select:hover,
+input:hover,
+span:hover,
+button:hover {
+    box-shadow: 5px 10px 8px #180058;
 }
