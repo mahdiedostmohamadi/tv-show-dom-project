@@ -8,8 +8,14 @@ const data = async () => {
     }
 };
 data();
-const series = (movies) =>{
+const series = (movies) => {
+    main=document.querySelector('main')
+    for (let movie of movies) {
+card=document.createElement('div')
+main.appendChild(card)
+const a=document.createElement('a')
+a.href=movie.url
+a.textContent=movie.name
 
-
-
-}
+    }
+};
