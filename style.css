@@ -18,6 +18,9 @@ input {
     display: inline;
     font-size: large;
 }
+::placeholder {
+    color: rgb(255, 251, 0);
+}
 button {
     width: 100px;
     height: 40px;
@@ -29,7 +32,6 @@ button {
 }
 select {
     display: block;
-
     width: 200px;
     height: 40px;
     background-color: rgba(30, 61, 133, 0.787);
@@ -38,7 +40,6 @@ select {
     font-size: large;
 }
 
-
 body {
     background-image: url(images/body.jpg);
     background-position: center;
@@ -46,17 +47,13 @@ body {
     background-size: cover;
 }
 
-
-
-
-
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     align-content: space-between;
-
+    margin-top: 0;
 }
 
 .a {
@@ -75,17 +72,18 @@ main{
     box-shadow: 3px 3px 8px 5px #180058;
 }
 
-.card:hover{
-    box-shadow: 5px 5px 15px 5px rgba(102, 5, 5, 0.8);;
-
-
+.card:hover {
+    box-shadow: 5px 5px 15px 5px rgba(102, 5, 5, 0.8);
 }
-.image {
+.img {
     padding: 5px;
     border-radius: 15px;
 }
 
-::placeholder {
-    color: rgb(255, 251, 0);
+.AR {
+    background-color: rgba(102, 5, 5, 0.8);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
 }
-
