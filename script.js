@@ -31,6 +31,7 @@ const series = (movies) => {
         rate.textContent = `rate:${movie.rating.average}`;
         airtime.textContent = `airtime:${movie.airtime}`;
         const summary = document.createElement("p");
+        summary.classList.add("summary");
         summary.innerHTML = movie.summary;
         summary.style.display = "none";
 

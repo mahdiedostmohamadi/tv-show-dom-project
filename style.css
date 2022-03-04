@@ -4,6 +4,7 @@
     padding: 0;
     font-family: sans-serif;
     color: rgb(255, 251, 0);
+    transition: 0.5s;
 }
 
 .header-img {
@@ -86,6 +87,11 @@ main {
     padding: 10px;
     margin: 10px;
     display: inline-block;
+}
+
+.summary:hover {
+    background-color: rgb(17, 45, 110);
+    border-radius: 15px;
 }
 
 select:hover,
