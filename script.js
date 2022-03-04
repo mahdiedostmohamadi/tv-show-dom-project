@@ -49,7 +49,7 @@ const series = (movies) => {
         episodeNumber < 10 && (episodeNumber = "0" + episodeNumber);
         seasonNumber < 10 && (seasonNumber = "0" + seasonNumber);
 
-        option.textContent = `S${movie.season}E${movie.number}${movie.name}`;
+        option.textContent = `S${seasonNumber}E${episodeNumber}${movie.name}`;
 
         select.append(option);
         select.addEventListener("change", () => {
